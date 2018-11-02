@@ -2,4 +2,6 @@ tensorflow
 lxml
 matplotlib
 pillow
-python3-tk
+packaging
+numpy
+matplotlib
