@@ -1,19 +1,16 @@
-# Object Detection Using TensorFlow  
-This repository contains the works which I have done using TensorFlow Object Detection API. Before running the code, you need to first install tensorflow and all its dependecies.  
-
-### System Requirements:
-``` 
-   * Ubuntu 16.04 LTS or later  
-   * Intel Pentium Quad Core Processor  
-   * Dependencies Installed  
+# Object Detection Using TensorFlow
+This repository contains the works which I have done using TensorFlow Object Detection API. Before running the code, you need to first install tensorflow and all its dependecies.
+## System Requirements
+```
+* Ubuntu 16.04 LTS or later  
+* Intel Pentium Quad Core Processor  
+* Dependencies Installed  
 ```
 Note: Above requirements is according to my system.  
 Below installation procedure is for CPU which has no GPU.  
 For installation of TensorFlow on GPU, refer [TensorFlow GPU Installation](https://www.tensorflow.org/install/)  
-
 ### Installation:
-``pip`` is a python package manager used for installing all the modules, if ``pip`` is not installed, then run the following command before insalling dependencies:  
-
+``pip`` is a python package manager used for installing all the modules, if ``pip`` is not installed, then run the following command before insalling dependencies:
  * Installing ```pip```
  ```bash
 For python 2.7:
@@ -32,17 +29,15 @@ For python 3:
 ```
 Note: ```dependencies.txt``` file contains all the dependencies/packages in order to run TensorFlow.  
 * After installing the TensorFlow, and all the dependencies, run the following command,  
-	``sudo apt-get install python3-tk (For installing tkinter library)``  
-
+	``sudo apt-get install python3-tk (For installing tkinter library)``
 * In python interpreter, run the following commands to check whether TensorFlow is installed sucessfully:
 ```python
 import tensorflow as tf
 print(tf.__version__) # print the version of TensorFlow installed in your system.
-```  
+```
 For detailed information on installation of TensorFlow, refer the below link:  
 [TensorFlow Installation](https://www.tensorflow.org/install/)  
-[TensorFlow Object Detection API Installation](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md)  
-
+[TensorFlow Object Detection API Installation](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md)
 #### OpenCV Installation:
 * I am using ``OpenCV`` for implementing the object detection in real-time, you need to install ``OpenCV`` also.  
 * Refer the below link for installation  
