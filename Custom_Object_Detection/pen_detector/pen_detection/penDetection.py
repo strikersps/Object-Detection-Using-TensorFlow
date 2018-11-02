@@ -1,4 +1,3 @@
-# IMPORTS
 import numpy as np
 import os
 import six.moves.urllib as urllib
@@ -11,9 +10,15 @@ from collections import defaultdict
 from io import StringIO
 from matplotlib import pyplot as plt  ### CWH
 from PIL import Image
+from packaging import version
 
 tensorflow_version = tf.__version__
 numpy_version = np.__version__
+
+if version.parse("1.4.0") > version.parse(tensorflow_version):
+    print("Updating tensorflow to 1.4.0 or higher...")
+    os.system('pip3 install --upgrade tensorflow')
+
 print('Tensorflow Version: %s\nNumpy Version: %s\n' % (tensorflow_version, numpy_version))
 
 # This is needed to display the images.
