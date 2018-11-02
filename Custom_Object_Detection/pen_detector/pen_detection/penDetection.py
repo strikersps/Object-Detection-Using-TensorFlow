@@ -8,7 +8,7 @@ import zipfile
 
 from collections import defaultdict
 from io import StringIO
-from matplotlib import pyplot as plt  ### CWH
+from matplotlib import pyplot as plt
 from PIL import Image
 from packaging import version
 
@@ -40,7 +40,7 @@ PATH_TO_CKPT = MODEL_NAME + '/frozen_inference_graph.pb'
 # List of the strings that is used to add correct label for each box.
 PATH_TO_LABELS = os.path.join('training', 'pen_label_map.pbtxt')  # Add object_detection path
 
-NUM_CLASSES = 1  # Trained the API for only one class
+NUM_CLASSES = 1  # Trained the API for only one class i.e Pen
 
 # Load a (frozen) Tensorflow model into memory.
 detection_graph = tf.Graph()
@@ -57,7 +57,6 @@ categories = label_map_util.convert_label_map_to_categories(label_map, max_num_c
                                                             use_display_name=True)
 category_index = label_map_util.create_category_index(categories)
 
-
 # Helper code
 def load_image_into_numpy_array(image):
     (im_width, im_height) = image.size
@@ -65,7 +64,7 @@ def load_image_into_numpy_array(image):
         (im_height, im_width, 3)).astype(np.uint8)
 
 
-# Detection
+# Detection Part
 # For the sake of simplicity you can use less images, add those images in the test_images directory 
 # If you want to test the code with your images, just add path to the images to the PATH_TO_TEST_IMAGES_DIR.
 
