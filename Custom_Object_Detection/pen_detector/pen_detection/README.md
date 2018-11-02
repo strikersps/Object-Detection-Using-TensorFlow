@@ -8,21 +8,21 @@ I have trained the **"ssd_mobilenet_v1_coco_2017_11_17"** model on my own set of
 
 #### Output:
 
-1. Output when program takes images as input:  
+1.Output when program takes images as input:
+
 ```bash
-   python3 penDetection.py
+python3 penDetection.py
 ```
 
-**Confidence Score: 99%**   
-![alt-text](https://github.com/strikersps/InternshipProjects/blob/master/Object_Detection_Using_TensorFlow/Custom_Object_Detection/pen_detector/pen_detection/output/1.png)  
+**Confidence Score: 99%**
+![alt-text](https://github.com/strikersps/Object_Detection_Using_TensorFlow/blob/master/Custom_Object_Detection/pen_detector/pen_detection/output/1.png)  
 **Confidence Score: 99%**  
-![alt-text](https://github.com/strikersps/InternshipProjects/blob/master/Object_Detection_Using_TensorFlow/Custom_Object_Detection/pen_detector/pen_detection/output/2.png)  
+![alt-text](https://github.com/strikersps/Object_Detection_Using_TensorFlow/blob/master/Custom_Object_Detection/pen_detector/pen_detection/output/2.png)  
 **Confidence Score: 96%**  
-![alt-text](https://github.com/strikersps/InternshipProjects/blob/master/Object_Detection_Using_TensorFlow/Custom_Object_Detection/pen_detector/pen_detection/output/3.png)  
+![alt-text](https://github.com/strikersps/Object_Detection_Using_TensorFlow/blob/master/Custom_Object_Detection/pen_detector/pen_detection/output/3.png)  
 
-2. Output when program detects pen in live videostream:
+2.Output when program detects pen in live videostream:
 
 ``` bash
-	python3 penDetection_opencv.py
+python3 penDetection_opencv.py
 ```
-
