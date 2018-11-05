@@ -1,4 +1,3 @@
-# IMPORTS
 import numpy as np
 import os
 import six.moves.urllib as urllib
@@ -8,6 +7,13 @@ from collections import defaultdict
 from io import StringIO
 from PIL import Image
 import cv2 as cv
+
+from packaging import version
+
+tensorflow_ver = tf.__version__
+if version.parse(tensorflow_ver) < version.parse("1.4.0"):
+    print("Upgrading Tensorflow...")
+    os.system('pip3 install --upgrade tensorflow')
 
 print('OpenCV Version: %s\nTensorFlow Version: %s\nNumPy Version: %s' % (cv.__version__,tf.__version__,np.__version__))
 
