@@ -20,7 +20,7 @@ print('OpenCV Version: %s\nTensorFlow Version: %s\nNumPy Version: %s' % (cv.__ve
 # cam = cv.VideoCapture(0) # Capturing the video feed from my WebCam, which is assigned an index value of 0
 
 if cv.VideoCapture(1).isOpened():
-	cam = cv.VideoCapture(1)
+    cam = cv.VideoCapture(1)
 else:
 	cam = cv.VideoCapture(0)
 
@@ -47,11 +47,11 @@ NUM_CLASSES = 1
 # Load a frozen graph of Tensorflow model into memory.
 detection_graph = tf.Graph()
 with detection_graph.as_default():
-  od_graph_def = tf.GraphDef()
-  with tf.gfile.GFile(PATH_TO_CKPT, 'rb') as fid:
-    serialized_graph = fid.read()
-    od_graph_def.ParseFromString(serialized_graph)
-    tf.import_graph_def(od_graph_def, name='')
+    od_graph_def = tf.GraphDef()
+    with tf.gfile.GFile(PATH_TO_CKPT, 'rb') as fid:
+        serialized_graph = fid.read()
+        od_graph_def.ParseFromString(serialized_graph)
+        tf.import_graph_def(od_graph_def, name='')
 
 # Loading label map
 label_map = label_map_util.load_labelmap(PATH_TO_LABELS)
@@ -61,7 +61,7 @@ category_index = label_map_util.create_category_index(categories)
 with detection_graph.as_default():
     with tf.Session(graph=detection_graph) as sess:
         while (cam.isOpened()): #isOpen() is simply checking whether the camera is open or not,if not it return false, otherwise true
-   	        # Defined two variables ret,frame, ret->boolean,checking whether any value is returned or not from 
+            #  Defined two variables ret,frame, ret->boolean,checking whether any value is returned or not from
    	        # image_np variable stores each frame which is returned from the func, if no frame is returned,
             # error will not be generated rather it will store None
             ret,image_np=cam.read()
@@ -93,9 +93,9 @@ with detection_graph.as_default():
                 # This statemenet runs one time for every frame, and it says that if the user enters 'q', then 
                 # simply break the loop.
                 if((cv.waitKey(25) & 0xFF) == ord('q')):
-               		cam.release() # releases the camera
-               		cv.destroyAllWindows() # closes all open windows
-               		break
+                    cam.release() # releases the camera
+                    cv.destroyAllWindows() # closes all open windows
+                    break
             else:
                 print('Stream not available!')
                 break
