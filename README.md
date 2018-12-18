@@ -11,7 +11,7 @@ Below installation procedure is for CPU not for GPU powered system.
 For installation of TensorFlow on GPU, refer [TensorFlow GPU Installation](https://www.tensorflow.org/install/)  
 ## Installation:
 ``pip`` is a python package manager used for installing all the modules, if ``pip`` is not installed, then run the following command before insalling dependencies:
- * ```pip``` Installation:
+ #### ```pip``` Installation:
  ```bash
 For python 2.7:
 	sudo apt-get -y install python-pip python-dev build-essential  
@@ -20,7 +20,7 @@ For python 3:
 	sudo apt-get -y install python3-pip  
 	pip3 -version (For checking the version of pip3)
 ```
- * Dependencies Installation:  
+ #### Dependencies Installation:  
    From the ```terminal``` run the following command:
 ``` bash
     bash dependecies.sh
@@ -37,10 +37,9 @@ If you get the following output, then ```TensorFlow``` is installed successfully
 ```python
    '1.12.0' (Version of tensorflow installed on your system)
 ```
-For detailed information on installation of TensorFlow, refer the below link:  
+For detailed information on installation of ```TensorFlow```, refer the below link:  
 [TensorFlow Installation](https://www.tensorflow.org/install/)  
 [TensorFlow Object Detection API Installation](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md)
-## OpenCV Installation:
+#### OpenCV Installation:
 * I used ``OpenCV`` for extracting frames from the camera in real-time, so, you need to install ``OpenCV`` also.  
-* Refer the below link for installation  
-[OpenCV Installation](https://www.pyimagesearch.com/2016/10/24/ubuntu-16-04-how-to-install-opencv/)
+* Refer the below link for installation [OpenCV Installation](https://www.pyimagesearch.com/2016/10/24/ubuntu-16-04-how-to-install-opencv/)
