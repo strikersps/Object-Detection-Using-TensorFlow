@@ -24,8 +24,9 @@ For python 3:
 ``` bash
     bash dependecies.sh
 ```
-Note: ```dependencies.sh``` file contains all the dependencies/packages in order to run the program.  
+Note: ```dependencies.sh``` file contains all the dependencies/packages in order to run the program.
 
+* In python interpreter, run the following commands to check whether TensorFlow is installed sucessfully:
 ```python
 import tensorflow as tf
 print(tf.__version__) # print the version of tensorflow installed.
