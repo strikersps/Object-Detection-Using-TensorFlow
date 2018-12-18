@@ -2,7 +2,7 @@
 This repository contains the works which I have done using TensorFlow Object Detection API. Before running the code, you need to first install tensorflow and all its dependecies.
 ## System Requirements
 ```
-* Ubuntu 18.04 LTS Bionic Beaver or later  
+* Ubuntu 18.04 LTS Bionic Beaver or Later  
 * Intel Core i3 Processor  
 * Dependencies Installed  
 ```
@@ -27,13 +27,13 @@ For python 3:
 ```
 Note: ```dependencies.sh``` file contains all the dependencies/packages in order to run the program.
 
-* In python interpreter, run the following commands to check whether TensorFlow is installed sucessfully:
+* In python interpreter, run the following commands to check whether TensorFlow is installed successfully:
 Open the ```terminal``` and write ```python3``` or ```python``` depending upon your ```python``` version and run the following code:  
 ```python
 import tensorflow as tf
 print(tf.__version__) # print the version of tensorflow installed.
 ```
-If you get the following output, then ```TensorFlow``` is installed sucessfully:  
+If you get the following output, then ```TensorFlow``` is installed successfully:  
 ```python
    '1.12.0' (Version of tensorflow installed on your system)
 ```
