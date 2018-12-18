@@ -22,15 +22,10 @@ For python 3:
 ```
  * Installing Dependencies:  
 ``` bash
-For python 2.7:  
-	sudo pip install -r dependencies.txt  
-For python 3:  
-	sudo pip3 install -r dependencies.txt
+    bash dependecies.sh
 ```
-Note: ```dependencies.txt``` file contains all the dependencies/packages in order to run TensorFlow.  
-* After installing the TensorFlow, and all the dependencies, run the following command,  
-	``sudo apt-get install python3-tk (For installing tkinter library)``
-* In python interpreter, run the following commands to check whether TensorFlow is installed sucessfully:
+Note: ```dependencies.sh``` file contains all the dependencies/packages in order to run the program.  
+
 ```python
 import tensorflow as tf
 print(tf.__version__) # print the version of tensorflow installed.
