@@ -21,6 +21,7 @@ For python 3:
 	pip3 -version (For checking the version of pip3)
 ```
  * Installing Dependencies:  
+   From the ```terminal``` run the following command:  
 ``` bash
     bash dependecies.sh
 ```
