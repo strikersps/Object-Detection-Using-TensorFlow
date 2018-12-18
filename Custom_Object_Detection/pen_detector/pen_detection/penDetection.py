@@ -69,7 +69,7 @@ def load_image_into_numpy_array(image):
 # If you want to test the code with your images, just add path to the images to the PATH_TO_TEST_IMAGES_DIR.
 
 PATH_TO_TEST_IMAGES_DIR = 'pen_test_images'  # change this directory according to your needs.
-TEST_IMAGE_PATHS = [os.path.join(PATH_TO_TEST_IMAGES_DIR, 'pen{}.jpg'.format(i)) for i in range(1, 15)]
+TEST_IMAGE_PATHS = [os.path.join(PATH_TO_TEST_IMAGES_DIR, 'pen{}.jpg'.format(i)) for i in range(1, 14)]
 
 # Size, in inches, of the output images.
 IMAGE_SIZE = (12, 8)
