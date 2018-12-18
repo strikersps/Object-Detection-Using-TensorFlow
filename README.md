@@ -41,5 +41,5 @@ For detailed information on installation of ```TensorFlow```, refer the below li
 [TensorFlow Installation](https://www.tensorflow.org/install/)  
 [TensorFlow Object Detection API Installation](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md)
 #### OpenCV Installation:
-* I used ``OpenCV`` for extracting frames from the camera in real-time, so, you need to install ``OpenCV`` also.  
+* I used ``OpenCV`` for extracting frames from the camera in real-time.  
 * Refer the below link for installation [OpenCV Installation](https://www.pyimagesearch.com/2016/10/24/ubuntu-16-04-how-to-install-opencv/)
