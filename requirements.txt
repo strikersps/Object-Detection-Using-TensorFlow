@@ -4,4 +4,3 @@ matplotlib
 pillow
 packaging
 numpy
-matplotlib
