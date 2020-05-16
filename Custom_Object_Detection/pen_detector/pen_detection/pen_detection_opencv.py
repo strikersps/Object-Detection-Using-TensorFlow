@@ -62,7 +62,7 @@ with detection_graph.as_default():
     with tf.Session(graph=detection_graph) as sess:
         while (cam.isOpened()): #isOpen() is simply checking whether the camera is open or not,if not it return false, otherwise true
             #  Defined two variables ret,frame, ret->boolean,checking whether any value is returned or not from
-   	        # image_np variable stores each frame which is returned from the func, if no frame is returned,
+   	    # image_np variable stores each frame which is returned from the func, if no frame is returned,
             # error will not be generated rather it will store None
             ret,image_np=cam.read()
             if ret == True:
