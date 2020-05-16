@@ -1,5 +1,7 @@
 # Object Detection Using TensorFlow
-This repository contains implementation of object detection in live video-stream and in an image using TensorFlow Object Detection API. Before running the code, you need to first install tensorflow and all of its dependencies.
+This repository contains implementation of object detection in [live video-stream](https://github.com/strikersps/Object-Detection-Using-TensorFlow/blob/master/Custom_Object_Detection/pen_detector/pen_detection/pen_detection_opencv.py
+) and also in an [image](https://github.com/strikersps/Object-Detection-Using-TensorFlow/blob/master/Custom_Object_Detection/pen_detector/pen_detection/pen_detection.py
+) using TensorFlow Object Detection API. Before running the code, you need to first install tensorflow and all of its dependencies.
 ## System Requirements
 ```
 * Ubuntu 18.04 LTS Bionic Beaver or Later  
