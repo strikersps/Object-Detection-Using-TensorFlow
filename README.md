@@ -8,7 +8,7 @@ This repository contains implementation of object detection in [live video-strea
 * Intel Core i3 Processor  
 * Dependencies Installed  
 ```
-Note: Above requirements is according to my system.  
+**Note:** Above requirements is according to my system.  
 Below installation procedure is for CPU not for GPU powered system.  
 For installation of TensorFlow on GPU, refer [TensorFlow GPU Installation](https://www.tensorflow.org/install/)  
 ## Installation:
